@@ -1,0 +1,52 @@
+.navigation {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 50px;
+    margin: 32px;
+
+    ul.navigation_list {
+        display: flex;
+        padding: 0px;
+        justify-content: space-around;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A0A3A7;
+
+        a.navigation_list--item {
+            justify-content: space-between;
+            color: #A0A3A7;
+            text-decoration: none;
+        }
+    }
+
+    .navigation__download-button {
+        justify-self: end;
+        width: 159px;
+        height: 48px;
+        background: linear-gradient(93.22deg, #E1E1E1 8.37%, #FFFFFF 99.95%);
+        box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08), inset 1px 1px 1px rgba(135, 135, 135, 0.32);
+        border-radius: 999px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 32px;
+
+        ul.navigation_list {
+            display: flex;
+            padding: 0px;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
